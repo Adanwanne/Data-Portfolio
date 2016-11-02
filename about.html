@@ -1,43 +1,117 @@
 <!DOCTYPE html>
 <html lang ="en">
 	<head>
-		<meta charset="utf-8">
 		<title> About Adaeze </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/data.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
-		<header>
+	<header>
 		<div>
 			<h1> HELLO </h1>
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="data.html">Data</a>
-				<a href="dances.html">Dances</a>
+			<nav class="navbar navbar-inverse">
+		  	<div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">Portfolio</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="index.html">Home</a></li>
+			        <li><a href="about.html">About</a></li>
+			        <li><a href="data.html">Data</a></li>
+			        <li><a href="dances.html">Dances</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			      </ul>
+			    </div>
+		  	</div>
 			</nav>
 		</div>
-		</header>
-		
-		<figure>
+	</header>
+
+	<section class="jumbotron">
+	  <div class="container text-center">
+	    <h1> Hello, </h1>
+	    <figure>
 			<img src="img/about.jpg"/>
 		</figure>
-		<p> </p>
-		<section id="info">
-			<ul>
-				<li> I like to think </li>
-				<li> And solve mysteries of my own making </li>
-				<li> And do all the extra challenge problems </li>
-				<li> But sometimes I get too lost in my brain... </li>
-				<li> And that's when I dance </li>
-			</ul>
-		</section>
-	
-	<footer>
-	<div>
+	    <h2> I'm Adaeze </h2>
+	  </div>
+	</section>
+
+	<section class="container-fluid bg-3 text-center" id="info">
+		<ul>
+			<li> I like to think </li>
+			<li> And solve mysteries of my own making </li>
+			<li> And do all the extra challenge problems </li>
+			<li> But sometimes I get too lost in my brain... </li>
+			<li> And that's when I dance </li>
+		</ul>
+	</section>
+	  
+	<!-- <div class="container-fluid bg-3 text-center">
+	  <h3>Some of my Work</h3><br>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	</div><br>
+
+	<div class="container-fluid bg-3 text-center">
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3">
+	      <p>Some text..</p>
+	      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	</div><br><br> -->
+
+	<footer class="container-fluid text-center">
 		<p> "The detail is in the data my dear." </p>
-  		<p>Contact</p>
-  	</div>
-  </footer>
+  		<p> Contact </p>
+	</footer>
+	
 	</body>
 </html>
