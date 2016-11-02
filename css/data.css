@@ -1,0 +1,29 @@
+body {
+	background-color: #FFFACD;
+}
+
+header {
+	display: float;
+}
+
+h3 {
+	color: #FFF;
+	font-size: 200px;
+	font-weight: 900;
+	text-align: center;
+
+}
+
+
+header footer {
+	border-width: 10px;
+}
+
+figure {
+	border-radius: 5;
+}
+
+div {
+	border-style: solid;
+	border-width: 3px;
+}
