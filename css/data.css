@@ -465,6 +465,7 @@ nav li {
 	margin: 10px;
 }
 #home{
+	padding: 27px;
 	border-style: none;
 	background: url("../img/home_icon.png") no-repeat;
 }
@@ -473,6 +474,7 @@ nav li {
 	background: url("../img/about_icon.png") no-repeat;
 }
 #data{
+	padding: 27px;
 	border-style: none;
 	background: url("../img/data_icon.png") no-repeat;
 }
@@ -483,8 +485,14 @@ nav li {
 
 /* Center slidehow on homepage */
 
-
-
+/* Dances Page */
+/*.container-fluid{
+	width: 80%;
+	margin: 0 auto;
+}*/
+/*#left{
+	*/margin-right: -50px;
+}
 footer {
       padding: 50px 25px 25px;
     }
