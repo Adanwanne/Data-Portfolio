@@ -429,27 +429,22 @@ html, body {
 	text-align: center; 
 	/*background-color: #FFFACD;*/
 }
-.top {
-	text-align: left;
-	padding-left: 120px;
-	/*background-image: url('../img/header.jpg'); 
-	background-repeat: no-repeat;*/
-	margin: 0;
-	margin-left: 100px;
-	margin-top: -20px;
-}
-.top h2{
-	padding-left: 140px;
-	color: #FFFFFF;
 
-}
-.top h1{
-	font-size: 60px;
-}
-header {
-	position: relative;
+#top{
+	padding-top: 0px;
+	padding-bottom: 0px;
 	border-style: double;
-	border-color: #FDFD96 !important;
+	border-color: #FDFD96;
+	background-color: #FFFFFF
+}
+
+h1, h2{
+	text-align: left !important;
+	padding: 0;
+}
+
+h2{
+	padding-left: 340px;
 	padding-top: -300px !important;
 }
 header img{
@@ -457,27 +452,6 @@ header img{
 	top: 65px;
 	left: 515px;
 	margin: 0;
-}
-.jumbotron{
-	background-color: #FFFFFF !important;
-}
-/*h2{
-	color: #eee !important;
-}*/
-h1, h2{
-	text-align: left !important;
-	margin: 0;
-}
-h2{
-	padding-left: 340px;
-	color: #FFFFFF;
-	padding-top: -300px !important;
-}
-li {
-	display: inline;
-	border-style: solid;
-	padding: 20px;
-	margin: 10px;
 }
 nav{
 	position: absolute;
@@ -489,8 +463,15 @@ nav{
     text-align: right;
     height: 20px;
     padding: 10px 20px;
-    margin: 0;
+    margin-bottom: -100px;
 }
+li {
+	display: inline;
+	border-style: solid;
+	padding: 20px;
+	margin: 10px;
+}
+
 
 /* Center slidehow on homepage */
 
@@ -500,49 +481,3 @@ footer {
       padding: 25px;
       border-style: solid;
     }
-
-/*ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	text-align: right;
-}
-
-li {
-	display: inline-block;
-}
-
-.class {
-	margin-right: 50%;
-}*/
-/* Remove the navbar's default margin-bottom and rounded borders */
-    /*.navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-
-/*header {
-	display: float;
-}
-
-h3 {
-	color: #FFF;
-	font-size: 200px;
-	font-weight: 900;
-	text-align: center;
-}
-
-
-header footer {
-	border-width: 10px;
-}
-
-figure {
-	border-radius: 5;
-}
-
-div {
-	border-style: solid;
-	border-width: 3px;
-}*/
