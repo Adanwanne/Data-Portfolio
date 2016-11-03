@@ -423,61 +423,68 @@ textarea {
 
 /* 	BEGIN MY CSS STYLING */
 html, body { 
-	width: 100%; 
-	height: 100%; 
-	margin: 0 auto; 
 	text-align: center; 
-	/*background-color: #FFFACD;*/
+	/*background-color: #FFFACD*/
+}
+#homepage{
+	background: linear-gradient(#FFFACD, #FFF);
 }
 
 #top{
 	padding-top: 0px;
 	padding-bottom: 0px;
-	border-style: double;
-	border-color: #FDFD96;
+	border-bottom: thick outset #FDFD96;
 	background-color: #FFFFFF
 }
-
 h1, h2{
-	text-align: left !important;
-	padding: 0;
+	text-align: left;
+	padding: 0px;
 }
-
 h2{
 	padding-left: 340px;
 	padding-top: -300px !important;
 }
+#top2{
+	margin-bottom: -40px;
+}
 header img{
 	position: absolute;
-	top: 65px;
+	top: 20px;
 	left: 515px;
 	margin: 0;
 }
 nav{
 	position: absolute;
-	top: -75px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    min-width: 800px;
-    text-align: right;
-    height: 20px;
-    padding: 10px 20px;
-    margin-bottom: -100px;
+	top: -5px;
+	text-align: right;
 }
-li {
+nav li {
 	display: inline;
 	border-style: solid;
 	padding: 20px;
 	margin: 10px;
 }
-
+#home{
+	border-style: none;
+	background: url("../img/home_icon.png") no-repeat;
+}
+#about{
+	border-style: none;
+	background: url("../img/about_icon.png") no-repeat;
+}
+#data{
+	border-style: none;
+	background: url("../img/data_icon.png") no-repeat;
+}
+#dances{
+	border-style: none;
+	background: url("../img/dances_icon.png") no-repeat;
+}
 
 /* Center slidehow on homepage */
 
 
 
 footer {
-      padding: 25px;
-      border-style: solid;
+      padding: 50px 25px 25px;
     }
