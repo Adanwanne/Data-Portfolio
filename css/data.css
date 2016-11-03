@@ -450,6 +450,13 @@ header {
 	position: relative;
 	border-style: double;
 	border-color: #FDFD96 !important;
+	padding-top: -300px !important;
+}
+header img{
+	position: absolute;
+	top: 65px;
+	left: 515px;
+	margin: 0;
 }
 .jumbotron{
 	background-color: #FFFFFF !important;
@@ -459,18 +466,22 @@ header {
 }*/
 h1, h2{
 	text-align: left !important;
+	margin: 0;
 }
 h2{
 	padding-left: 340px;
 	color: #FFFFFF;
-
+	padding-top: -300px !important;
 }
 li {
 	display: inline;
+	border-style: solid;
+	padding: 20px;
+	margin: 10px;
 }
 nav{
 	position: absolute;
-	top: -240px;
+	top: -75px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -478,6 +489,7 @@ nav{
     text-align: right;
     height: 20px;
     padding: 10px 20px;
+    margin: 0;
 }
 
 /* Center slidehow on homepage */
