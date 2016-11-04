@@ -421,26 +421,26 @@ textarea {
 }
 
 
-/* 	BEGIN MY CSS STYLING */
+/*** 	BEGIN MY CSS STYLING ***/
 html, body { 
 	text-align: center; 
 	/*background-color: #FFFACD*/
 }
-#homepage{
-	background: linear-gradient(#FFFACD, #FFF);
-}
 
+
+/*Styling for header */
 #top{
 	padding-top: 0px;
 	padding-bottom: 0px;
 	border-bottom: thick outset #FDFD96;
 	background-color: #FFFFFF
 }
-h1, h2{
+h1{
 	text-align: left;
-	padding: 0px;
+	padding-left: 20px;
 }
 h2{
+	text-align: left;
 	padding-left: 340px;
 	padding-top: -300px !important;
 }
@@ -471,7 +471,7 @@ nav li {
 }
 #about{
 	border-style: none;
-	background: url("../img/about_icon.png") no-repeat;
+	background: url("../img/about_icon.jpg") no-repeat;
 }
 #data{
 	padding: 27px;
@@ -483,16 +483,23 @@ nav li {
 	background: url("../img/dances_icon.png") no-repeat;
 }
 
-/* Center slidehow on homepage */
-
-/* Dances Page */
-/*.container-fluid{
-	width: 80%;
-	margin: 0 auto;
-}*/
-/*#left{
-	*/margin-right: -50px;
+/* Styling for index.html */
+#homepage{
+	/*background: linear-gradient(#FFFACD, #FFF);*/
 }
-footer {
-      padding: 50px 25px 25px;
-    }
+.highlights{
+	margin: 0 auto;
+}
+
+
+/* Styling for footer */
+footer p:first-child {
+	margin-top: 50px;
+	border-width: 5px;
+	border-top: inset #FDFD96;
+	border-radius: 25px;
+	padding-top: 10px;
+	font-style: italic;
+	font-family: "Lucinda Console";
+	font-size: 20px;
+}  
