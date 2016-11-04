@@ -463,6 +463,10 @@ nav li {
 	border-style: solid;
 	padding: 20px;
 	margin: 10px;
+	font-weight: bolder;
+	font-size: 17px;
+	font: #99a682;
+	text-transform: uppercase;
 }
 #home{
 	padding: 27px;
@@ -479,8 +483,9 @@ nav li {
 	background: url("../img/data_icon.png") no-repeat;
 }
 #dances{
+	padding: 27px 27px 27px 12px; 
 	border-style: none;
-	background: url("../img/dances_icon.png") no-repeat;
+	background: url("../img/dances_icon3.png") no-repeat;
 }
 
 /* Styling for index.html */
@@ -525,3 +530,6 @@ footer p:first-child {
 	font-family: "Lucinda Console";
 	font-size: 20px;
 }  
+.footericon{
+	margin-bottom: 10px;
+}
