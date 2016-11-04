@@ -465,7 +465,7 @@ nav li {
 	margin: 10px;
 	font-weight: bolder;
 	font-size: 17px;
-	font: #99a682;
+	/*font: #99a682;*/
 	text-transform: uppercase;
 }
 #home{
@@ -482,7 +482,7 @@ nav li {
 	border-style: none;
 	background: url("../img/data_icon.png") no-repeat;
 }
-#dances{
+#visual{
 	padding: 27px 27px 27px 12px; 
 	border-style: none;
 	background: url("../img/dances_icon3.png") no-repeat;

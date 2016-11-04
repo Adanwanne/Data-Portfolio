@@ -10,10 +10,6 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	  	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 	</head>
 
 	<body>
@@ -26,40 +22,43 @@
 	   <nav class="navbar" role="navigation">
 	      <div class="container-fluid">
 	         <ul class="site-nav" id="accessibleNav">
-	            <li><a href="index.html">Home</a></li>
+	            <li><a href="index.html">&nbsp;Home&nbsp;</a></li>
 	        	<li><a href="about.html">About</a></li>
-	            <li><a href="data.html">Data</a></li>
-	        	<li id="dances"><a href="dances.html">Dances</a></li>
+	            <li><a href="data.html">&nbsp;Data&nbsp;</a></li>
+	        	<li id="visual"><a href="visual.html">Visual</a></li>
 	     	  </ul>
 	       </div>
 	   </nav>
 	</header>
 	  
-	<div class="container">
-	  <h3> Dances </h3><br>
+	<section class="container">
+	  <h3> Visualizations </h3><br>
 	  <div class="row">
 	     <div class="col-sm-6 thumb">
-	       <figure class="left">
-	       <img src="img/bellyt.jpg" class="img-responsive" alt="Hafla belly dance"/>
-	       <figcaption> Halfa performance with my troupe </figcaption> </br>
+	       <figure>
+	       <img src="img/alluvial.png" class="img-responsive" alt="Graph of smoker demographics"/>
+	       <figcaption> Alluvial Diagram of the Demographics of Smokers </figcaption></br>
 	       </figure>
 	     </div>
 	     <div class="col-sm-6 thumb">
 	       <figure>
-	       <img src="img/swing_spain.jpg" class="img-responsive" alt="Madrid swing dance">
-	       <figcaption> Swing dancing party in Madrid </figcaption></figcaption> </br>
+	       <img src="img/iOS_heatmap.png" class="img-responsive" alt="Graph of smoking app types">
+	       <figcaption> Heatmap of the Types of iOS Smoking Apps </figcaption></br>
 	       </figure>
 	     </div>
+	  </div>
+
+	  <div class="row">
 	     <div class="col-sm-6 thumb">
-	      <figure class="left">
-	      <img src="img/toastmasters.jpg" class="img-responsive" alt="Conference group dancing">
-	      <figcaption> Loosening up at a conference </figcaption> </br>
+	      <figure>
+	      <img src="img/cowpens.png" class="img-responsive" alt="Graph of ozone emissions">
+	      <figcaption> Ozone Emission Clusters at Cowpens Park </figcaption></br>
 	      </figure>
 	    </div>
 	    <div class="col-sm-6 thumb">
 	      <figure>
-	      <img src="img/swing.jpg" class="img-responsive" alt="Social swing dancing">
-	      <figcaption> Weekly social swing dancing </figcaption> </br>
+	      <img src="img/cowpens2.png" class="img-responsive" alt="Graph of ozone maxima">
+	      <figcaption> Line Graph of Cluster Maxima at Cowpens Park </figcaption></br>
 	      </figure>
 	    </div>
 	  </div>
@@ -67,7 +66,6 @@
 
 	<footer>
 		<p> "The detail is in the data my dear." </p>
-		<p> -Adaeze Ajoku </p>
 		<div class="footericon">
 			<a href="https://github.com/Adawanne" target="_blank">
 			<img src="img/github_icon.png"/>
@@ -75,6 +73,11 @@
 		</div>
 		<p> &copy; 2016 Adaeze Ajoku </p>
 	</footer>
-		
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>
