@@ -485,12 +485,34 @@ nav li {
 
 /* Styling for index.html */
 #homepage{
-	/*background: linear-gradient(#FFFACD, #FFF);*/
+	background: linear-gradient(#FFF, #FFFACD, #FFF);
 }
 .highlights{
 	margin: 0 auto;
 }
 
+
+/* Styling for about.html */
+#hi{
+	position: relative;
+}
+
+.hey{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 30%;
+	width: 100%;
+	margin: 30% 0 0 -40%;
+	border-style: dashed;
+}
+.hey p {
+	text-align: left;
+}
+
+/*.intro{
+	text-align: left;
+}*/
 
 /* Styling for footer */
 footer p:first-child {
