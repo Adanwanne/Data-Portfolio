@@ -450,6 +450,10 @@ li a{
 	color: #83d0c9;
 	height: 55px;
 }
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: orange;
+  background-color: black;
+}
 #home{
 	background: url("../img/home_icon.jpg") no-repeat;
 	background-position: center;
@@ -463,7 +467,7 @@ li a{
 	background-position: center;
 }
 #visual{
-	background: url("../img/dances_icon3.png") no-repeat;
+	background: url("../img/vis_icon.jpg") no-repeat;
 	background-position: center;
 }
 
@@ -526,6 +530,18 @@ img[src*="about"]{
 }
 
 /* Styling for visual.html */
+.vis{
+  padding-top: 1em;
+}
+.img-responsive{
+  margin: 0 auto;
+}
+#leftpic{
+  margin-right: -15%;
+}
+#rightpic{
+  margin-left: -15%;
+}
 
 /* Styling for footer */
 footer p:first-child {
