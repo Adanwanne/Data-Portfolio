@@ -425,56 +425,81 @@ textarea {
 html, body { 
 	text-align: center; 
 }
+.portfolio{
+	background-image: radial-gradient(farthest-corner at 0.5em 0.5em, #fefdfb 0%, ##FFF 100%)
+}
 
 /*Styling for header */
+.header{
+	background-color: #FEFEDC;
+	margin-top: -1.5%;
+	padding-bottom: 0.3%;
+}
 .top{
 	background-color: #FEFEDC;
-	margin-top: -2.5%;
-	margin-bottom: -0.6%;
 }
-nav{
-	position: absolute;
-	top: -5px;
-	text-align: right;
+#navi{
+	float: right;
+	margin-top: -5%;
+	margin-right: 11%;
 }
-nav li {
-	display: inline;
-	border-style: solid;
-	padding: 20px;
-	margin: 10px;
-	font-weight: bolder;
-	font-size: 17px;
-	/*font: #99a682;*/
+li a{
 	text-transform: uppercase;
+	font-size: 1.5em;
+	/*font-style: bolder;*/
+	color: #83d0c9;
+	height: 55px;
 }
+
+/*.welcome{
+	clear: both;
+}*/
+
 #home{
-	padding: 27px;
-	border-style: none;
-	background: url("../img/home_icon.png") no-repeat;
+	background: url("../img/home_icon.jpg") no-repeat;
+	background-position: center;
+	font-style: bold;
 }
 #about{
-	border-style: none;
 	background: url("../img/about_icon.jpg") no-repeat;
+	background-position: center;
 }
 #data{
-	padding: 27px;
-	border-style: none;
-	background: url("../img/data_icon.png") no-repeat;
+	background: url("../img/data_icon.jpg") no-repeat;
+	background-position: center;
 }
 #visual{
-	padding: 27px 27px 27px 12px; 
-	border-style: none;
 	background: url("../img/dances_icon3.png") no-repeat;
+	background-position: center;
 }
 
 /* Styling for index.html */
-#homepage{
-	background: linear-gradient(#FFF, #FFFACD, #FFF);
+.homepage{
+	background: url("../img/art.jpg") no-repeat center center;
+	/*background-position: center;*/
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	min-width: 100%;
+	min-height: 500px;
+	top: 0;
+	left: 0;
+	margin-top: -0.6%;
 }
-.highlights{
-	margin: 0 auto;
+.welcome{
+	background-color: #fff;
+	width: 25%;
+	margin: 9% auto -4.1% auto;
+	border-radius: 25%;
+	top: 25%;
 }
-
+.welcome h2{
+	padding-top: 5%;
+}
+.welcome h4{
+	margin-top: 15%;
+	padding-bottom: 5%;
+}
 
 /* Styling for about.html */
 #hi{
@@ -494,15 +519,13 @@ nav li {
 	text-align: left;
 }
 
-/*.intro{
-	text-align: left;
-}*/
+/*Styling for visual.html */
 
 /* Styling for footer */
 footer p:first-child {
 	margin-top: 50px;
 	border-width: 5px;
-	border-top: inset #FDFD96;
+	border-top: inset #83d0c9;
 	border-radius: 25px;
 	padding-top: 10px;
 	font-style: italic;

@@ -2,7 +2,7 @@
 <html lang ="en">
 	<head>
 		<title> 
-	   She dances with data 
+	   Data Sleuth 
 	   </title>
 	   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,47 +16,31 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	</head>
 
-	<body>
-
-	<div class = "page-header">
+	<body class="portfolio">
+	<header class = "header">
 	   <h1 class="top">
 	      <img src="img/logo2.jpg"/> 
 	   </h1>
-	</div>
-	   
-	   <nav class="navbar" role="navigation">
-	      <div class="container-fluid">
-	         <ul class="site-nav" id="accessibleNav">
-	            <li id="home"><a href="index.html">&nbsp;Home&nbsp;</a></li>
-	        	<li><a href="about.html">About</a></li>
-	            <li><a href="data.html">&nbsp;Data&nbsp;</a></li>
-	        	<li><a href="visual.html">Visual</a></li>
-	     	  </ul>
-	       </div>
+	   <nav class="container" id="navi">
+	      <div class="navbar">
+		     <ul class="nav navbar-nav navbar-right">
+			    <li id="home"><a href="index.html">Home</a></li>
+			    <li><a href="about.html">About</a></li>
+			    <li><a href="data.html">Data</a></li> 
+			    <li><a href="visual.html">Visual</a></li>
+		    </ul>
+	     </div>
 	   </nav>
-
-
-	<section class="welcome" id="homepage">
-	<section>
-	    <h3> Data Scientist  |  Educator </h3>
-	</section>
-	  
-	<section id="homepage">
-	  <div class="slideshow">
-	  	<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-	  	<figure>
-		   <img class="highlights" src="img/demographics_3.png">
-		   <figcaption> Fig1. - Alluvial Diagram of demographic characteristics of smokers </figcaption>
-		</figure>
-		<figure>
-		   <img class="highlights" src="img/clusters.png">
-		   <figcaption> Fig2. - Clusters of ozone emission readings at national parks </figcaption>
-		</figure>
-		<img class="highlights" src="img/about_icon.jpg">
-		<img class="highlights" src="img/about_icon.jpg">
-		<a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
-	  </div> 
-	</section>
+	</header>
+	   
+	<section class="homepage">
+	   <div> &nbsp;
+	   </div>
+	   <div class="welcome">
+	      <h2> ADAEZE AJOKU </h2>
+	      <h3> Data sleuthing since '16 </h3>
+	      <h4> CONTACT ME </h4>
+	   </div>
 	</section>
 
 	<footer>
@@ -75,25 +59,5 @@
 
     <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-	    showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-	    var i;
-	    var x = document.getElementsByClassName("highlights");
-	    if (n > x.length) {slideIndex = 1} 
-	    if (n < 1) {slideIndex = x.length} ;
-	    for (i = 0; i < x.length; i++) {
-	        x[i].style.display = "none"; 
-	    }
-	    x[slideIndex-1].style.display = "block"; 
-	}
-	</script>
 	</body>
 </html>
