@@ -424,34 +424,13 @@ textarea {
 /*** 	BEGIN MY CSS STYLING ***/
 html, body { 
 	text-align: center; 
-	/*background-color: #FFFACD*/
 }
-
 
 /*Styling for header */
-#top{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	border-bottom: thick outset #FDFD96;
-	background-color: #FFFFFF
-}
-h1{
-	text-align: left;
-	padding-left: 20px;
-}
-h2{
-	text-align: left;
-	padding-left: 340px;
-	padding-top: -300px !important;
-}
-#top2{
-	margin-bottom: -40px;
-}
-header img{
-	position: absolute;
-	top: 20px;
-	left: 515px;
-	margin: 0;
+.top{
+	background-color: #FEFEDC;
+	margin-top: -2.5%;
+	margin-bottom: -0.6%;
 }
 nav{
 	position: absolute;
