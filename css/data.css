@@ -441,7 +441,7 @@ html, body {
 #navi{
 	float: right;
 	margin-top: -5%;
-	margin-right: 11%;
+	margin-right: 10%;
 }
 li a{
 	text-transform: uppercase;
@@ -450,15 +450,9 @@ li a{
 	color: #83d0c9;
 	height: 55px;
 }
-
-/*.welcome{
-	clear: both;
-}*/
-
 #home{
 	background: url("../img/home_icon.jpg") no-repeat;
 	background-position: center;
-	font-style: bold;
 }
 #about{
 	background: url("../img/about_icon.jpg") no-repeat;
@@ -475,7 +469,7 @@ li a{
 
 /* Styling for index.html */
 .homepage{
-	background: url("../img/art.jpg") no-repeat center center;
+	background: url("../img/art2.jpg") no-repeat center center;
 	/*background-position: center;*/
 	background-size: cover;
 	width: 100%;
@@ -487,46 +481,58 @@ li a{
 	margin-top: -0.6%;
 }
 .welcome{
-	background-color: #fff;
+	background-color: #fefdfb;
 	width: 25%;
 	margin: 9% auto -4.1% auto;
 	border-radius: 25%;
 	top: 25%;
+	opacity: 0.8;
 }
 .welcome h2{
 	padding-top: 5%;
+	font-family: "Rockwell Extra Bold";
 }
 .welcome h4{
 	margin-top: 15%;
 	padding-bottom: 5%;
+	text-decoration: underline;
 }
 
 /* Styling for about.html */
+img[src*="about"]{
+	width: 100%;
+	padding-top: 2.5em;
+	margin-left: -1.5em;
+}
 #hi{
 	position: relative;
 }
-
 .hey{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	height: 30%;
 	width: 100%;
-	margin: 33% 0 0 -40%;
+	margin: 37% 0 0 -47%;
 	border-style: dashed;
 }
 .hey p {
 	text-align: left;
 }
 
-/*Styling for visual.html */
+/* Styling for data.html */
+.bg-3{
+	padding-top: 2em;
+}
+
+/* Styling for visual.html */
 
 /* Styling for footer */
 footer p:first-child {
 	margin-top: 50px;
 	border-width: 5px;
 	border-top: inset #83d0c9;
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	padding-top: 10px;
 	font-style: italic;
 	font-family: "Lucinda Console";
