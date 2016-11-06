@@ -19,7 +19,7 @@
 	<body class="portfolio">
 	<header class = "header">
 	   <h1 class="top">
-	      <img src="img/logo2.jpg"/> 
+	      <img src="img/logo2.jpg" alt="logo"/> 
 	   </h1>
 	   <nav class="container" id="navi">
 	      <div class="navbar">
@@ -30,6 +30,13 @@
 			    <li><a href="visual.html">Visual</a></li>
 		    </ul>
 	     </div>
+	         <select class="selectpicker">
+	        <option value="" selected="selected">Select</option>
+	        <option value="index.html">Home</option>
+	        <option value="about.html">About</option>
+	        <option value="data.html">Data</option>
+	        <option value="visual.html">Visual</option>
+	     </select>
 	   </nav>
 	</header>
 	   
@@ -46,15 +53,15 @@
 
 	<form id="contact_form" action="mailto:me@adaajo@umich.edu" onsubmit="return contactForm()" method="POST" enctype="multipart/form-data">
 	   <div class="row">
-		   <label for="name">Your name:</label><br />
+		   <label for="name">Name:</label><br />
 		   <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
 	   </div>
 	   <div class="row">
-		   <label for="email">Your email:</label><br />
+		   <label for="email">Email:</label><br />
 		   <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
 	   </div>
 	   <div class="row">
-		   <label for="message">Your message:</label><br />
+		   <label for="message">Message:</label><br />
 		   <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
 	   </div>
 	   <input id="submit_button" type="submit" value="Send email" />
@@ -64,7 +71,7 @@
 		<p> "The detail is in the data my dear." </p>
 		<div class="footericon">
 			<a href="https://github.com/Adawanne" target="_blank">
-			<img src="img/github_icon.png"/>
+			<img src="img/github_icon.png" alt="Link to Github"/>
 			</a>
 		</div>
 		<p> &copy; 2016 Adaeze Ajoku </p>
@@ -97,6 +104,30 @@
 			return false;
 		}
 	}
-    </script>
+   
+	//Create the dropdown base
+    $("<select />").appendTo("nav");
+
+	//Create default option "Go to..."
+    $("<option />", {
+      "selected": "selected",
+      "value"	: "",
+      "text"	: "Go to..."
+    }).appendTo("nav select");
+
+	//Populate dropdown with menu items
+	$("nav a").each(function() {
+		var el = $(this);
+		$("<option />", {
+			"value"	: el.attr("href"),
+			"text"	: el.text()
+		}).appendTo("nav select");
+	});
+
+	//To make the dropdown menu actually work
+	$("nav select").change(function() {
+		window.location = $(this).find("option:selected").val();
+	});
+	 </script>
 	</body>
 </html>
