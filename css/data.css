@@ -458,7 +458,7 @@ li a{
 @media only screen and (min-width: 320px){
 .header{margin-top: -5.8%;}
 #navi>.navbar>ul{display: none;}
-#navi>select {
+#navi>select{
   display: inline-block;
   margin: -10% 0 0 0;
   color: #000;
@@ -471,7 +471,8 @@ li a{
 }
 @media only screen and (min-width: 768px){
 .header{margin-top: -2.5%;}
-#navi>.navbar>ul {display: inline-block;}  
+#navi>.navbar>ul {display: inline-block;}
+#navi>.navbar>ul>select {display:none;}  
 #navi>select{display: none;}
 #home, #about, #data, #visual{
   text-decoration: underline;
@@ -483,8 +484,8 @@ li a{
 }
 @media only screen and (min-width: 1220px){
 .header{margin-top: -1.6%;}
-#navi>.navbar>ul {display: inline-block;}  
-#navi>select {display: none;}
+/*#navi>.navbar>ul {display: inline-block;}  
+#navi>select {display: none;}*/
 #home{
 	background: url("../img/home_icon.jpg") no-repeat;
 	background-position: center;
@@ -557,26 +558,26 @@ li a{
 }
 
 /* Styling for about.html */
-img[src*="about"]{
-	width: 100%;
-	padding-top: 2.5em;
-	margin-left: -1.5em;
-}
 #hi{
 	position: relative;
+}
+@media only screen and (min-width: 320px){
+img[src*="about"]{padding-top: 2.5em;}
 }
 @media only screen and (min-width: 768px){
 .hey{
   margin: 14% 0 0 -47%;
+  position: absolute;
+}
+img[src*="about"]{
+  width: 100%;
+  margin-left: -1.5em;
 }
 }
 @media only screen and (min-width: 992px){
-.hey{
-	margin: 37% 0 0 -47%;
-}
+.hey{margin: 37% 0 0 -47%;}
 }
 .hey{
-  position: absolute;
   top: 50%;
   left: 50%;
   height: 30%;
@@ -591,20 +592,18 @@ img[src*="about"]{
 .bg-3{
 	padding-top: 2em;
 }
+@media only screen and (max-width: 767px){
+  .col-sm-4:nth-child(1){
+    padding-bottom: 2.5em;
+  }
+}
 
 /* Styling for visual.html */
-.vis{
-  padding-top: 1em;
-}
+.vis{padding-top: 1em;}
 .img-responsive{
   margin: 0 auto;
 }
-#leftpic{
-  margin-right: -15%;
-}
-#rightpic{
-  margin-left: -15%;
-}
+
 
 /* Styling for footer */
 @media only screen and (min-width: 320px){

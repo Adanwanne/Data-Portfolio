@@ -23,20 +23,20 @@
 	   </h1>
 	   <nav class="container" id="navi">
 	      <div class="navbar">
-		     <ul class="nav navbar-nav navbar-right">
-			    <li id="home"><a href="index.html">Home</a></li>
-			    <li><a href="about.html">About</a></li>
-			    <li><a href="data.html">Data</a></li> 
-			    <li><a href="visual.html">Visual</a></li>
+		    <ul class="nav navbar-nav navbar-right">
+			   <li id="home"><a href="index.html">Home</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="data.html">Data</a></li> 
+			   <li><a href="visual.html">Visual</a></li>
 		    </ul>
-	     </div>
-	         <select class="form-control">
-	        <option value="" selected="selected">Select</option>
-	        <option value="index.html">Home</option>
-	        <option value="about.html">About</option>
-	        <option value="data.html">Data</option>
-	        <option value="visual.html">Visual</option>
-	     </select>
+	      </div>
+	        <select class="form-control">
+	           <option value="" selected="selected">Select</option>
+	           <option value="index.html">Home</option>
+	           <option value="about.html">About</option>
+	           <option value="data.html">Data</option>
+	           <option value="visual.html">Visual</option>
+	        </select>
 	   </nav>
 	</header>
 	   
@@ -83,51 +83,6 @@
     <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script type="text/javascript">  
-    function toggleForm(){
-	var x = document.getElementById('contact_form');
-	if (x.style.display == "none"){
-		x.style.display = "block";
-	}
-	if (x.style.display == "block"){
-		x.style.display = "none";
-	}
-	}
-	function contactForm(){
-		var x = document.getElementById('name');
-		var y = document.getElementById('email');
-		var z = document.getElementById('message');
-		if((x.length) && (y.length > 0) && (z.length > 0)){
-			return true;
-		}else{
-			alert("Please fill in all fields");
-			return false;
-		}
-	}
-   
-	//Create the dropdown base
-    $("<select />").appendTo("#navi>ul");
-
-	//Create default option "Go to..."
-    $("<option />", {
-      "selected": "selected",
-      "value"	: "",
-      "text"	: "Go to..."
-    }).appendTo("#navi>select");
-
-	//Populate dropdown with menu items
-	$("#navi>a").each(function() {
-		var el = $(this);
-		$("<option />", {
-			"value"	: el.attr("href"),
-			"text"	: el.text()
-		}).appendTo("#navi>select");
-	});
-
-	//To make the dropdown menu actually work
-	$("#navi>select").change(function() {
-		window.location = $(this).find("option:selected").val();
-	});
-	 </script>
+	<script src="myscripts.js"></script>
 	</body>
 </html>

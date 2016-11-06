@@ -42,13 +42,13 @@
 	  <h2 class="vis"> Visualizations </h2><br>
 	  <div class="row">
 	     <div class="col-sm-6 thumb">
-	       <figure id="leftpic">
+	       <figure>
 	       <img src="img/alluvial.png" class="img-responsive" alt="Graph of smoker demographics"/>
 	       <figcaption> Alluvial Diagram of the Demographics of Smokers </figcaption></br>
 	       </figure>
 	     </div>
 	     <div class="col-sm-6 thumb">
-	       <figure id="rightpic" >
+	       <figure>
 	       <img src="img/iOS_heatmap.png" class="img-responsive" alt="Graph of smoking app types">
 	       <figcaption> Heatmap of the Types of iOS Smoking Apps </figcaption></br>
 	       </figure>
@@ -57,13 +57,13 @@
 
 	  <div class="row">
 	     <div class="col-sm-6 thumb">
-	      <figure id="leftpic">
+	      <figure>
 	      <img src="img/cowpens.png" class="img-responsive" alt="Graph of ozone emissions">
 	      <figcaption> Ozone Emission Clusters at Cowpens Park </figcaption></br>
 	      </figure>
 	    </div>
 	    <div class="col-sm-6 thumb">
-	      <figure id="rightpic" >
+	      <figure>
 	      <img src="img/cowpens2.png" class="img-responsive" alt="Graph of ozone maxima">
 	      <figcaption> Line Graph of Cluster Maxima at Cowpens Park </figcaption></br>
 	      </figure>
@@ -87,30 +87,6 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script>
-	//Create the dropdown base
-    $("<select />").appendTo("#navi>ul");
-
-	//Create default option "Go to..."
-    $("<option />", {
-      "selected": "selected",
-      "value"	: "",
-      "text"	: "Go to..."
-    }).appendTo("#navi>select");
-
-	//Populate dropdown with menu items
-	$("#navi>a").each(function() {
-		var el = $(this);
-		$("<option />", {
-			"value"	: el.attr("href"),
-			"text"	: el.text()
-		}).appendTo("#navi>select");
-	});
-
-	//To make the dropdown menu actually work
-	$("#navi>select").change(function() {
-		window.location = $(this).find("option:selected").val();
-	});
-	 </script>
+	<script src="myscripts.js"></script>
 	</body>
 </html>
