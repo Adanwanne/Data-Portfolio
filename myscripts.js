@@ -1,46 +1,46 @@
-// <script type="text/javascript">  
-    function toggleForm(){
-	var x = document.getElementById('contact_form');
-	if (x.style.display == "none"){
-		x.style.display = "block";
-	}
-	if (x.style.display == "block"){
-		x.style.display = "none";
-	}
-	}
-	function contactForm(){
-		var x = document.getElementById('name');
-		var y = document.getElementById('email');
-		var z = document.getElementById('message');
-		if((x.length) && (y.length > 0) && (z.length > 0)){
-			return true;
-		}else{
-			alert("Please fill in all fields");
-			return false;
-		}
-	}
-   
-	//Create the dropdown base
-    $("<select />").appendTo("#navi>.navbar>ul");
+// function toggleForm('contact_form') {
+// var e = document.getElementById('contact_form');
+// if(e.style.display == "none")
+// e.style.display = "block";
+// else
+// e.style.display = "none";
 
-	//Create default option "Go to..."
-    $("<option />", {
-      "selected": "selected",
-      "value"	: "",
-      "text"	: "Go to..."
-    }).appendTo("#navi>select");
+function openForm(){
+	document.getElementById('contact_form').style.display="block"
+}
 
-	//Populate dropdown with menu items
-	$("#navi>.navbar>a").each(function() {
-		var el = $(this);
-		$("<option />", {
-			"value"	: el.attr("href"),
-			"text"	: el.text()
-		}).appendTo("#navi>select");
-	});
+function contactForm(){
+	var x = document.getElementById('name');
+	var y = document.getElementById('email');
+	var z = document.getElementById('message');
+	if((x.length) && (y.length > 0) && (z.length > 0)){
+		return true;
+	}else{
+		alert("Please fill in all fields");
+		return false;
+	}
+}
 
-	//To make the dropdown menu actually work
-	$("#navi>select").change(function() {
-		window.location = $(this).find("option:selected").val();
-	});
-// </script>
+//Create the dropdown base
+$("<select />").appendTo("#navi>.navbar>ul");
+
+//Create default option "Go to..."
+$("<option />", {
+  "selected": "selected",
+  "value"	: "",
+  "text"	: "Go to..."
+}).appendTo("#navi>select");
+
+//Populate dropdown with menu items
+$("#navi>.navbar>a").each(function() {
+	var el = $(this);
+	$("<option />", {
+		"value"	: el.attr("href"),
+		"text"	: el.text()
+	}).appendTo("#navi>select");
+});
+
+//To make the dropdown menu actually work
+$("#navi>select").change(function() {
+	window.location = $(this).find("option:selected").val();
+});
