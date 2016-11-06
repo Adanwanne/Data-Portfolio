@@ -28,6 +28,13 @@
 			    <li><a href="visual.html">Visual</a></li>
 		    </ul>
 	     </div>
+         <select class="form-control">
+           <option value="" selected="selected">Select</option>
+           <option value="index.html">Home</option>
+           <option value="about.html">About</option>
+           <option value="data.html">Data</option>
+           <option value="visual.html">Visual</option>
+          </select>
 	   </nav>
 	</header>
 
@@ -61,5 +68,31 @@
 
   	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script>
+	//Create the dropdown base
+    $("<select />").appendTo("#navi>ul");
+
+	//Create default option "Go to..."
+    $("<option />", {
+      "selected": "selected",
+      "value"	: "",
+      "text"	: "Go to..."
+    }).appendTo("#navi>select");
+
+	//Populate dropdown with menu items
+	$("#navi>a").each(function() {
+		var el = $(this);
+		$("<option />", {
+			"value"	: el.attr("href"),
+			"text"	: el.text()
+		}).appendTo("#navi>select");
+	});
+
+	//To make the dropdown menu actually work
+	$("#navi>select").change(function() {
+		window.location = $(this).find("option:selected").val();
+	});
+	 </script>
 	</body>
 </html>

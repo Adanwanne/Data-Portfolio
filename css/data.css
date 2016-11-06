@@ -432,7 +432,7 @@ html, body {
 /*Styling for header */
 .header{
 	background-color: #FEFEDC;
-	margin-top: -1.5%;
+	margin-top: -1.6%;
 	padding-bottom: 0.3%;
 }
 .top{
@@ -455,38 +455,55 @@ li a{
   background-color: transparent;
   color: #83d0c9;
 }
-#navi{
-  display: none;
-}
 @media only screen and (min-width: 320px){
-  nav select {display: inline-block;}
+.header{margin-top: -5.8%;}
+#navi>.navbar>ul{display: none;}
+#navi>select {
+  display: inline-block;
+  margin: -10% 0 0 0;
+  color: #000;
+  background-color: #fefdfb;
+  border-color: #83d0c9;
+}
+}
+@media only screen and (min-width: 480px){
+.header{margin-top: -4%;}  
 }
 @media only screen and (min-width: 768px){
-#navi {display: inline-block;}  
-nav select {display: none;}
+.header{margin-top: -2.5%;}
+#navi>.navbar>ul {display: inline-block;}  
+#navi>select{display: none;}
 #home, #about, #data, #visual{
   text-decoration: underline;
   background-position: center;
 } 
 }
+@media only screen and (min-width: 992px){
+.header{margin-top: -1.9%;}  
+}
 @media only screen and (min-width: 1220px){
-#navi {display: none;}  
-nav select {display: inline-block;}
+.header{margin-top: -1.6%;}
+#navi>.navbar>ul {display: inline-block;}  
+#navi>select {display: none;}
 #home{
 	background: url("../img/home_icon.jpg") no-repeat;
 	background-position: center;
+  text-decoration: none;
 }
 #about{
 	background: url("../img/about_icon.jpg") no-repeat;
 	background-position: center;
+  text-decoration: none;
 }
 #data{
 	background: url("../img/data_icon.jpg") no-repeat;
 	background-position: center;
+  text-decoration: none;
 }
 #visual{
 	background: url("../img/vis_icon.jpg") no-repeat;
 	background-position: center;
+  text-decoration: none;
 }
 }
 
@@ -503,6 +520,17 @@ nav select {display: inline-block;}
 	left: 0;
 	margin-top: -0.1%;
 }
+@media only screen and (min-width: 320px){
+.welcome{ 
+  background-color: none;
+  font-weight: bolder;
+  color: #000;
+}
+.welcome h2, h4{ 
+  display:none;
+  }
+}
+@media only screen and (min-width: 768px){
 .welcome{
 	background-color: #fefdfb;
 	width: 25%;
@@ -512,13 +540,15 @@ nav select {display: inline-block;}
 	opacity: 0.8;
 }
 .welcome h2{
+  display: block;
 	padding-top: 5%;
 	font-family: "Rockwell Extra Bold";
 }
 .welcome h4{
+  display: block;
 	margin-top: 15%;
 	padding-bottom: 5%;
-	text-decoration: underline;
+}
 }
 #contact_form{
   display: none;
@@ -535,14 +565,23 @@ img[src*="about"]{
 #hi{
 	position: relative;
 }
+@media only screen and (min-width: 768px){
 .hey{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 30%;
-	width: 100%;
+  margin: 14% 0 0 -47%;
+}
+}
+@media only screen and (min-width: 992px){
+.hey{
 	margin: 37% 0 0 -47%;
-	border-style: dashed;
+}
+}
+.hey{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 100%;
+  border-style: dashed;
 }
 .hey p {
 	text-align: left;
@@ -568,12 +607,18 @@ img[src*="about"]{
 }
 
 /* Styling for footer */
+@media only screen and (min-width: 320px){
+footer p:first-child {border-style: none;}  
+}
+@media only screen and (min-width: 768px){
 footer p:first-child {
-	margin-top: 50px;
-	border-width: 5px;
-	border-top: inset #83d0c9;
-	/*border-radius: 25px;*/
-	padding-top: 10px;
+  border-width: 5px;
+  border-top: inset #83d0c9;
+}
+}
+footer p:first-child {
+	margin-top: 4%;
+	padding-top: 1%;
 	font-style: italic;
 	font-family: "Lucinda Console";
 	font-size: 20px;
