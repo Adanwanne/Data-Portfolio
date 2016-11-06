@@ -444,15 +444,16 @@ html, body {
 	margin-right: 10%;
 }
 li a{
-	text-transform: uppercase;
-	font-size: 1.5em;
-	/*font-style: bolder;*/
-	color: #83d0c9;
-	height: 55px;
+	font-weight:bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #83d0c9;
+  height: 55px;
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-  color: orange;
-  background-color: black;
+.navbar>.navbar-right>li>a:hover{
+  text-decoration: underline;
+  background-color: transparent;
+  color: #83d0c9;
 }
 #home{
 	background: url("../img/home_icon.jpg") no-repeat;
@@ -500,6 +501,11 @@ li a{
 	margin-top: 15%;
 	padding-bottom: 5%;
 	text-decoration: underline;
+}
+#contact_form{
+  display: none;
+  margin-top: 5em;
+  margin-bottom: -2em;
 }
 
 /* Styling for about.html */
