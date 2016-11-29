@@ -7,6 +7,7 @@
 	    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/data.css">
+	    <link rel='stylesheet' href='css/lightbox.css'>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -43,13 +44,13 @@
 	  <div class="row">
 	     <div class="col-sm-6 thumb">
 	       <figure>
-	       <img src="img/alluvial.png" class="img-responsive" alt="Graph of smoker demographics"/>
+	       <a href="img/alluvial.png" data-lightbox='visuals' data-title='Alluvial Diagram of the Demographics of Smokers'><img src="img/alluvial.png" class="img-responsive" alt="Graph of smoker demographics"/></a>
 	       <figcaption> Alluvial Diagram of the Demographics of Smokers </figcaption>
 	       </figure>
 	     </div>
 	     <div class="col-sm-6 thumb">
 	       <figure>
-	       <img src="img/iOS_heatmap.png" class="img-responsive" alt="Graph of smoking app types">
+	       <a href='img/iOS_heatmap.png' data-lightbox='visuals' data-title='Heatmap of the Types of iOS Smoking Apps'><img src="img/iOS_heatmap.png" class="img-responsive" alt="Graph of smoking app types"></a>
 	       <figcaption> Heatmap of the Types of iOS Smoking Apps </figcaption>
 	       </figure>
 	     </div>
@@ -58,13 +59,13 @@
 	  <div class="row">
 	     <div class="col-sm-6 thumb">
 	      <figure>
-	      <img src="img/cowpens.png" class="img-responsive" alt="Graph of ozone emissions">
+	      <a href='img/cowpens.png' data-lightbox='visuals' data-title='Ozone Emission Clusters at Cowpens Park'><img src="img/cowpens.png" class="img-responsive" alt="Graph of ozone emissions"></a>
 	      <figcaption> Ozone Emission Clusters at Cowpens Park </figcaption>
 	      </figure>
 	    </div>
 	    <div class="col-sm-6 thumb">
 	      <figure>
-	      <img src="img/cowpens2.png" class="img-responsive" alt="Graph of ozone maxima">
+	      <a href='img/cowpens2.png' data-lightbox='visuals' data-title='Line Graph of Cluster Maxima at Cowpens Park'><img src="img/cowpens2.png" class="img-responsive" alt="Graph of ozone maxima"></a>
 	      <figcaption> Line Graph of Cluster Maxima at Cowpens Park </figcaption>
 	      </figure>
 	    </div>
@@ -74,7 +75,7 @@
 	<footer>
 		<p> "The detail is in the data my dear." </p>
 		<div class="footericon">
-			<a href="https://github.com/Adawanne" target="_blank">
+			<a href="https://github.com/Adanwanne" target="_blank">
 			<img src="img/github_icon.png" alt="Link to Github"/>
 			</a>
 		</div>
@@ -88,5 +89,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script src="myscripts.js"></script>
+	<script src="lightbox.js"></script>
+	<script>
+    lightbox.option({
+      'wrapAround': true,
+    })
+</script>
 	</body>
 </html>
