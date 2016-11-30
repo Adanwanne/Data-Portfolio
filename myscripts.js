@@ -1,12 +1,11 @@
-// function toggleForm('contact_form') {
-// var e = document.getElementById('contact_form');
-// if(e.style.display == "none")
-// e.style.display = "block";
-// else
-// e.style.display = "none";
-
-function openForm(){
-	document.getElementById('contact_form').style.display="block"
+function toggleForm(){
+	var e = document.getElementById('contact_form');
+	if(e.style.display == "" || e.style.display == "none"){
+		document.getElementById('contact_form').style.display="block";
+	}else{
+		e.style.display = "none";
+	}
+	// console.log(document.getElementById('contact_form').style.display);
 }
 
 function contactForm(){
